@@ -23,7 +23,7 @@
       }
     },
     mounted() {
-      console.log(this.$refs.wrapper)
+//      console.log(this.$refs.wrapper)
       setTimeout(() => {
         this._initScroll()
       }, 20)
