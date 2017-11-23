@@ -2,9 +2,10 @@ import 'babel-polyfill'
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// 解决移动端300ms延迟的插件
 import fastclick from 'fastclick'
 import VueLazyLoad from 'vue-lazyload'
-// import store from './store'
+import store from './store'
 
 import 'common/stylus/index.styl'
 
@@ -20,6 +21,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  // store,
+  store,
   render: h => h(App)
 })
